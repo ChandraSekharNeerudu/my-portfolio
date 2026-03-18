@@ -1,0 +1,16 @@
+# IDE Settings
+.idea/
+.vscode/
+*.iml
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Build folders (for when you add Java/Spring later)
+target/
+*.class
+bin/
+
+# Dependencies
+node_modules/

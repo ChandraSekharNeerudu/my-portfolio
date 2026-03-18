@@ -1,0 +1,105 @@
+.sec5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    min-height: 70vh;
+}
+.sec-5-1{
+   text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-info {
+   display: flex;
+    flex-direction: row;       /* Force horizontal layout */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;                 /* Reduce gap for mobile */
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 15px 25px;        /* Slightly reduced padding */
+    width: fit-content;        /* Container wraps tightly around items */
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;      /* Prevents the text from breaking into two lines */
+}
+
+.contact-item i {
+    font-size: 25px;
+}
+
+.contact-item a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Footer Styling */
+.myfooter {
+    display: flex;             /* 1. Enable Flexbox */
+    flex-direction: column;    /* 2. Stack links and text vertically */
+    align-items: center;       /* 3. Center them horizontally */
+    justify-content: center;   /* 4. Center them vertically if there's extra height */
+    padding: 60px 20px;
+    gap: 30px;                 /* 5. Adds space between the list and the copyright */
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;             /* Make the UL itself a flexbox to put <li> side-by-side */
+    gap: 30px;                 /* Space between About, Experience, etc. */
+    padding: 0;
+    flex-wrap: wrap;           /* Allows links to wrap on small mobile screens */
+    justify-content: center;
+}
+
+.footer-links a {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: darkorange;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.myfooter p {
+    color: grey;
+    font-size: 14px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767px) {
+    .contact-info {
+        padding: 10px 15px;
+        gap: 15px;
+    }
+    .contact-item i {
+        font-size: 18px;       /* Scale down icon */
+    }
+    .contact-item a {
+        font-size: 14px;
+    }
+    .footer-links {
+        gap: 15px;             /* Tighter spacing on small phones */
+    }
+    .footer-links a {
+        font-size: 16px;
+    }
+}
